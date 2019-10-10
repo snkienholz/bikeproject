@@ -52,7 +52,7 @@ public class Bike implements BikeParts {
         + "This bike has " + this.handleBars + " handlebars on a "
         + this.frame + " frame with " + this.NumGears + " gears."
         + "\nIt has a " + this.seatType + " seat with " + this.tyres + " tyres.");
-  }//end method printDescription
+  } //end method printDescription
 
 }//end class Bike
 	

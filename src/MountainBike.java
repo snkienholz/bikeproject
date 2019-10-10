@@ -1,7 +1,27 @@
-public class MountainBike extends Bike {
+public class MountainBike extends Bike implements MountainParts {
 
   private String suspension, type;
   private int frameSize;
+
+  @Override
+  public String getSuspension() {
+    return suspension;
+  }
+
+  @Override
+  public void setSuspension(String newValue) {
+    this.suspension = newValue;
+  }
+
+  @Override
+  public String getType() {
+    return type;
+  }
+
+  @Override
+  public void setType(String newValue) {
+    this.type = newValue;
+  }
 
   public MountainBike() {
     this("Bull Horn", "Hardtail", "Maxxis", "dropper", 27, "RockShox XC32", "Pro", 19);
