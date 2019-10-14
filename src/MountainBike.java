@@ -35,10 +35,11 @@ public class MountainBike extends Bike implements MountainParts {
     this.frameSize = frameSize;
   }//end constructor
 
-  public void printDescription() {
-    super.printDescription();
-    System.out.println("This mountain bike is a " + this.type + " bike and has a " + this.suspension
-        + " suspension and a frame size of " + this.frameSize + "inches.");
+
+  public String toString() {
+
+    return super.toString() + "This mountain bike is a " + this.type + " bike and has a " + this.suspension
+        + " suspension and a frame size of " + this.frameSize + "inches.";
 
   }//end method printDescription
 }//end class MountainBike

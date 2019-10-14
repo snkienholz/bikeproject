@@ -23,6 +23,7 @@ public class RoadBike extends Bike implements RoadParts {
   }
 
   public RoadBike() {
+    // to Roadbike, THIS [constructor] is what RoadBike is, hence the *this* keyword
     this("drop", "racing", "tread less", "razor", 19, 20, 22);
   }//end constructor
 
@@ -32,15 +33,17 @@ public class RoadBike extends Bike implements RoadParts {
 
   public RoadBike(String handleBars, String frame, String tyres, String seatType, int numGears,
       int tyreWidth, int postHeight) {
+    // passing in the parameters of Bike into the object Roadbike
     super(handleBars, frame, tyres, seatType, numGears);
     this.tyreWidth = tyreWidth;
     this.postHeight = postHeight;
   }//end constructor
 
-  public void printDescription() {
-    super.printDescription();
-    System.out.println("This Roadbike bike has " + this.tyreWidth + "mm tyres and a post height of "
-        + this.postHeight + ".");
+  public String toString() {
+
+    return super.toString() + "This Roadbike bike has " + this.tyreWidth
+        + "mm tyres and a post height of "
+        + this.postHeight + ".";
   }//end method printDescription
 
 }//end class RoadBike
