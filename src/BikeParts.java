@@ -1,19 +1,19 @@
 public interface BikeParts {
 
   // constant declaration
-  public final String MAKE = "Oracle Bikes";
+  String MAKE = "Oracle Bikes";
 
   // required methods after implementation
-  public String getHandleBars();
+  String getHandleBars();
 
-  public void setHandleBars(String newValue);
+  void setHandleBars(String newValue);
 
-  public String getTyres();
+  String getTyres();
 
-  public void setTyres(String newValue);
+  void setTyres(String newValue);
 
-  public String getSeatType();
+  String getSeatType();
 
-  public void setSeatType(String newValue);
+  void setSeatType(String newValue);
 
 } // end interface BikeParts
